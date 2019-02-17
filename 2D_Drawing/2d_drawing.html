@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Origami Crane</title>
+    <link rel="shortcut icon" href="site-icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+
+  <body onload="main()">
+    <img style="height: 50px; margin-top: 10px;" src="site-icon.png">
+    <h1 style="font-size: 18pt;">WebGL Origami Visualization</h1>
+    <div id="wrapper">
+      <canvas id="webgl" width="700" height="700">
+        Please use a browser that supports "canvas".
+      </canvas>
+    </div>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="2d_drawing.js"></script>
+  </body>
+</html>
