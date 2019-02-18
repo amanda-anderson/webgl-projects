@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Line Clipping</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body onload="main()" style="padding-left: 15px; background-color: rgb(26, 26, 26); color: palevioletred; font-family: Arial;">
+    <h3 style="color: #eb9db7; font-family: Arial;">COSC3306 - Assignment 3</h1>
+    
+    <canvas id="webgl" width="450" height="450">Please use a browser that supports "canvas"</canvas>
+
+  <p style="color: palevioletred;" id="update"><br></p>
+  <p style="color: rgb(236, 157, 183);" id="algorithmUsed">Cohen-Sutherland clipping being used.</p>
+  <p> Controls :: Shift | Switch Algorithm</p>
+
+  <button id="btn"; onclick="reset()">Reset</button><br/>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Clipping_aanderson.js"></script>
+  </body>
+</html>
