@@ -1,0 +1,128 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html, body {
+    margin: 0;
+    background-color: #825b84;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.titleCstm {
+    background-color: #533950;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.control {
+    color: rgb(238, 204, 215);
+    font-size: 14pt !important;
+    margin-left: 15px;
+}
+
+.controlDesc {
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    margin-left: 35px;
+}
+
+.actionTitle {
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+}
+
+.sectionHeader {
+    color: rgb(255, 255, 255);
+    font-size: 16pt !important;
+}
+
+img {
+    margin-bottom: -20px;
+}
+
+h1 {
+    font-size: 30pt;
+    color: white;
+    font-weight: 500;
+}
+
+#wrapper {
+    border-radius: 15px;
+    height: 650px;
+    width: 650px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: 125px;
+}
+
+#hud {
+
+    height: 660px;
+    width: 660px;
+    overflow: hidden;
+    margin-left: 485px;
+}
+
+#instructions {
+    text-align: left;
+    margin-left: 10px; 
+}
+
+.actionBtn {
+    text-decoration: none;
+    border: none;
+    background: #c084c4;
+    color:white;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.actionBtn:hover {
+    text-decoration: none;
+    border: none;
+    background: white;
+    color:#573d58;
+}
+
+.resetBtn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background:rgb(87, 61, 88);
+    color:white;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+    transition: 0.3s;
+}
+
+.resetBtn:hover {
+    transform:scale(1.1);
+}
+
+#addPlantBtn {
+    opacity: 1;
+}
+
+#oysterBtn {
+    opacity: 1;
+}

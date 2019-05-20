@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Aquarium</title>
+    <link rel="shortcut icon" href="site-icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+
+  <body onload="main()">
+      <div id="instructions">
+        <div class="titleCstm">
+            <h1 style="font-size: 20pt; font-weight: 700;">WebGL Aquarium</h1>
+        </div>
+      
+        <h1 class='sectionHeader'>View Control</h1>
+        <h1 class='control'>+ & -</h1>
+        <h1 class='controlDesc'>Zoom in/Out</h2>
+          <h1 class='control'>Up and Down Arrows</h1>
+        <h1 class='controlDesc'>Change Angle</h1>
+        <br>
+        <h1 class='sectionHeader'>Actions</h1>
+        <button class='actionBtn' onclick="cleanTank()">Clean Tank</button>
+        <button class='actionBtn' onclick="feedFish()">Feed Fish</button>
+        <button class='actionBtn' id='addPlantBtn' onclick="addPlant()">Add Plant</button><br>
+        <button class='actionBtn' onclick="toggleLight()">Toggle Light</button>
+        <button class='actionBtn' id='oysterBtn' onclick="openOyster()">Open Oyster</button><br>
+
+        <h1 class='actionTitle'>Aquarium Light Colour</h2>
+        <input type="range" name="points" min="0" max="255" onchange="updateR(this.value)" value="255">Red</input><br>
+        <input type="range" name="points" min="0" max="255" onchange="updateG(this.value)" value="255">Green</input><br>
+        <input type="range" name="points" min="0" max="255" onchange="updateB(this.value)" value="255">Blue</input><br>
+        <input type="range" name="points" min="0" max="100" onchange="updateIntense(this.value)" value="100">Ambient Intensity</input><br>
+        
+        <br>
+        <button class='resetBtn' onclick="reset()">Reset</button>
+      </div>
+    <div id="wrapper">
+      <canvas id="webgl" width="650px" height="650px">
+        Please use a browser that supports "canvas"
+      </canvas>
+    </div>
+    <canvas id="hud" width="660px" height="660px" style="position: absolute; z-index: 1"></canvas>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="util_Library.js"></script>
+    <script src="aanderson_Final.js"></script>
+    <script src="ModelCollection.js"></script>
+  </body>
+</html>
