@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: 'Raleway';">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Filtering</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  </head>
+
+	<body onload="main()" style="padding-left: 20px; background-color: #252525;">
+	
+	<div id="wrapper" style="display: flex; color: palevioletred; font-size: 14pt;">
+
+			<div id="toggles" style="padding-right: 65px;">
+				<h1 style="font-size: 20pt; color: white; margin-bottom: -5px;">Image Filtering</h1>
+				<h3 style="font-size: 12pt; color: rgb(223, 179, 194); margin-bottom: 0px;">Convert to Grey</h3>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(100);" >Simple Averaging</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(101);" >Luma greys</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(102);" >Luminance Greys</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(103);" >De-saturation Grey</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(104);" >Grey Scale (Max R,G,B)</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(105);" >Grey Scale (Min R,G,B)</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(106);" >Grey Scale (Red)</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(107);" >Grey Scale (Green)</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(108);" >Grey Scale (Blue)</input><br/>
+				<h3 style="font-size: 12pt; color: rgb(223, 179, 194); margin-bottom: 0px;">Colour Filtering</h3>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(109);" >Only Red</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(110);" >Only Green</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(111);" >Only Blue</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(112);" >No Red</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(113);" >No Green</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(114);" >No Blue</input><br/>
+				<h3 style="font-size: 12pt; color: rgb(223, 179, 194); margin-bottom: 0px;">Limit Greys</h3>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(115);" >Grey [4 colours]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(116);" >Grey [16 colours]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(117);" >Grey [32 colours]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(118);" >Grey [50 colours]</input><br/>
+				<h3 style="font-size: 12pt; color: rgb(223, 179, 194); margin-bottom: 0px;">Limit Colours</h3>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(119);" >RGB [64 Combos]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(120);" >RGB [512 colours]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(121);" >RGB [4k]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(122);" >RGB [125k colours]</input><br/>
+				<input type="radio" name="imgChg" value="" style="margin: 2px;" onchange="applyFilter(0);" checked>Reset</input><br/>	
+			</div>
+
+			<div id="canvases" style="padding-top: 25px;">
+					<canvas id="canvas" width="200" height="200" style="border-radius: 15px;">
+						Please use a browser that supports "canvas"
+					</canvas>
+								<br>
+					<canvas id="canvas2" width="200" height="200" style="border-radius: 15px;">
+						Please use a browser that supports "canvas"
+					</canvas>
+				</div>
+	</div>
+
+   <script src="imageFilters.js"></script>
+  </body>
+</html>
